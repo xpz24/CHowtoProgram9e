@@ -3,21 +3,20 @@
 #include <stdio.h>
 
 int main(void) {
-   int x = 1; // declared here so it can be used after loop
+    int x = 1; // declared here so it can be used after loop
 
-   // loop 10 times
-   for (; x <= 10; ++x) {
-      // if x is 5, terminate loop
-      if (x == 5) {
-         break; // break loop only if x is 5
-      }
+    // loop 10 times
+    for (; x <= 10; ++x) {
+        // if x is 5, terminate loop
+        if (x == 5) {
+            break; // break loop only if x is 5
+        }
 
-      printf("%d ", x);
-   }
+        printf("%d ", x);
+    }
 
-   printf("\nBroke out of loop at x == %d\n", x);
+    printf("\nBroke out of loop at x == %d\n", x);
 }
-
 
 /**************************************************************************
  * (C) Copyright 1992-2015 by Deitel & Associates, Inc. and               *
@@ -33,4 +32,3 @@ int main(void) {
  * consequential damages in connection with, or arising out of, the       *
  * furnishing, performance, or use of these programs.                     *
  *************************************************************************/
-

@@ -2,12 +2,11 @@
 // Printing on one line with two printf statements.
 #include <stdio.h>
 
-// function main begins program execution 
+// function main begins program execution
 int main(void) {
-   printf("Welcome ");
-   printf("to C!\n"); 
-} // end function main 
-
+    printf("Welcome ");
+    printf("to C!\n");
+} // end function main
 
 /**************************************************************************
  * (C) Copyright 1992-2015 by Deitel & Associates, Inc. and               *

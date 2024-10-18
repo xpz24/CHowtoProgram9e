@@ -1,5 +1,5 @@
 // fig07_06.c
-// Converting a string to uppercase using a 
+// Converting a string to uppercase using a
 // non-constant pointer to non-constant data.
 #include <ctype.h>
 #include <stdio.h>
@@ -7,21 +7,20 @@
 void convertToUppercase(char *sPtr); // prototype
 
 int main(void) {
-   char string[] = "cHaRaCters and $32.98"; // initialize char array
+    char string[] = "cHaRaCters and $32.98"; // initialize char array
 
-   printf("The string before conversion is: %s\n", string);
-   convertToUppercase(string);
-   printf("The string after conversion is: %s\n", string); 
-} 
+    printf("The string before conversion is: %s\n", string);
+    convertToUppercase(string);
+    printf("The string after conversion is: %s\n", string);
+}
 
 // convert string to uppercase letters
 void convertToUppercase(char *sPtr) {
-   while (*sPtr != '\0') { // current character is not '\0' 
-      *sPtr = toupper(*sPtr); // convert to uppercase
-      ++sPtr; // make sPtr point to the next character
-   } 
-} 
-
+    while (*sPtr != '\0') {     // current character is not '\0'
+        *sPtr = toupper(*sPtr); // convert to uppercase
+        ++sPtr;                 // make sPtr point to the next character
+    }
+}
 
 /**************************************************************************
  * (C) Copyright 1992-2021 by Deitel & Associates, Inc. and               *

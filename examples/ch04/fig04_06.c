@@ -3,14 +3,12 @@
 #include <stdio.h>
 
 int main(void) {
-   int counter = 1; // initialize counter
+    int counter = 1; // initialize counter
 
-   do {
-      printf("%d  ", counter);
-   } while (++counter <= 5);
+    do {
+        printf("%d  ", counter);
+    } while (++counter <= 5);
 }
-
-
 
 /**************************************************************************
  * (C) Copyright 1992-2015 by Deitel & Associates, Inc. and               *

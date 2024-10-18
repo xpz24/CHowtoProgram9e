@@ -2,12 +2,8 @@
 // A first program in C.
 #include <stdio.h>
 
-// function main begins program execution 
-int main(void) {
-   printf("Welcome to C!\n");
-} // end function main 
-
-
+// function main begins program execution
+int main(void) { printf("Welcome to C!\n"); } // end function main
 
 /**************************************************************************
  * (C) Copyright 1992-2021 by Deitel & Associates, Inc. and               *

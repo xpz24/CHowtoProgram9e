@@ -3,11 +3,7 @@
 // not preceded by + or -
 #include <stdio.h>
 
-int main(void) {
-   printf("% d\n% d\n", 547, -547);
-} 
-
- 
+int main(void) { printf("% d\n% d\n", 547, -547); }
 
 /**************************************************************************
  * (C) Copyright 1992-2021 by Deitel & Associates, Inc. and               *

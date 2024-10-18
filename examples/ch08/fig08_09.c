@@ -4,17 +4,17 @@
 #define SIZE 80
 
 int main(void) {
-   int x = 0; 
-   double y = 0.0; 
+    int x = 0;
+    double y = 0.0;
 
-   puts("Enter an integer and a double:");
-   scanf("%d%lf", &x, &y);
+    puts("Enter an integer and a double:");
+    scanf("%d%lf", &x, &y);
 
-   char s[SIZE] = ""; // create char array
-   sprintf(s, "integer:%6d\ndouble:%7.2f", x, y);
-   
-   printf("The formatted output stored in array s is:\n%s\n", s);
-} 
+    char s[SIZE] = ""; // create char array
+    sprintf(s, "integer:%6d\ndouble:%7.2f", x, y);
+
+    printf("The formatted output stored in array s is:\n%s\n", s);
+}
 
 /**************************************************************************
  * (C) Copyright 1992-2021 by Deitel & Associates, Inc. and               *

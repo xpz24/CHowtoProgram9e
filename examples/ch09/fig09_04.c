@@ -3,16 +3,14 @@
 #include <stdio.h>
 
 int main(void) {
-   int x = 12345; 
-   int *ptr = &x; 
-   
-   printf("The value of ptr is %p\n", ptr); 
-   printf("The address of x is %p\n\n", &x);
+    int x = 12345;
+    int *ptr = &x;
 
-   printf("Printing a %% in a format control string\n");
-} 
+    printf("The value of ptr is %p\n", ptr);
+    printf("The address of x is %p\n\n", &x);
 
-
+    printf("Printing a %% in a format control string\n");
+}
 
 /**************************************************************************
  * (C) Copyright 1992-2021 by Deitel & Associates, Inc. and               *

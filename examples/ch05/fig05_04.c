@@ -2,17 +2,15 @@
 // Shifted, scaled random integers produced by 1 + rand() % 6.
 #include <stdio.h>
 #include <stdlib.h>
- 
+
 int main(void) {
-   
-   for (int i = 1; i <= 10; ++i) { // loop 10 times
-      printf("%d  ", 1 + (rand() % 6)); // display random die value
-   } 
 
-   puts("");
-} 
+    for (int i = 1; i <= 10; ++i) {       // loop 10 times
+        printf("%d  ", 1 + (rand() % 6)); // display random die value
+    }
 
-
+    puts("");
+}
 
 /**************************************************************************
  * (C) Copyright 1992-2021 by Deitel & Associates, Inc. and               *
@@ -28,4 +26,3 @@ int main(void) {
  * consequential damages in connection with, or arising out of, the       *
  * furnishing, performance, or use of these programs.                     *
  *************************************************************************/
-

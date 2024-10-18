@@ -3,13 +3,13 @@
 #include <stdio.h>
 
 int main(void) {
-   char z[9] = ""; 
-   
-   printf("%s", "Enter string: ");
-   scanf("%8[aeiou]", z); // search for set of characters
+    char z[9] = "";
 
-   printf("The input was \"%s\"\n", z);
-} 
+    printf("%s", "Enter string: ");
+    scanf("%8[aeiou]", z); // search for set of characters
+
+    printf("The input was \"%s\"\n", z);
+}
 
 /**************************************************************************
  * (C) Copyright 1992-2021 by Deitel & Associates, Inc. and               *

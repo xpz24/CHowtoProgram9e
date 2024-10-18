@@ -1,26 +1,24 @@
 // figC_01.c
-// Initializing specific array elements with designated initializers. 
+// Initializing specific array elements with designated initializers.
 #include <stdio.h>
 
 int main(void) {
-   int values[5] = {
-      [0] = 123, // initialize element 0
-      [4] = 456 // initialize element 4
-   }; // semicolon is required
+    int values[5] = {
+        [0] = 123, // initialize element 0
+        [4] = 456  // initialize element 4
+    }; // semicolon is required
 
-   // output array contents
-   printf("values: ");
+    // output array contents
+    printf("values: ");
 
-   for (size_t i = 0; i < 5; ++i) {
-      printf("%d  ", values[i]);
-   } 
+    for (size_t i = 0; i < 5; ++i) {
+        printf("%d  ", values[i]);
+    }
 
-   puts("");
-} 
+    puts("");
+}
 
-
-
- /*************************************************************************
+/*************************************************************************
  * (C) Copyright 1992-2021 by Deitel & Associates, Inc. and               *
  * Pearson Education, Inc. All Rights Reserved.                           *
  *                                                                        *

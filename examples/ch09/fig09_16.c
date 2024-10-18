@@ -3,14 +3,13 @@
 #include <stdio.h>
 
 int main(void) {
-   char z[9] = ""; 
+    char z[9] = "";
 
-   printf("%s", "Enter a string: ");
-   scanf("%8[^aeiou]", z); // inverted scan set
+    printf("%s", "Enter a string: ");
+    scanf("%8[^aeiou]", z); // inverted scan set
 
-   printf("The input was \"%s\"\n", z);
-} 
-
+    printf("The input was \"%s\"\n", z);
+}
 
 /**************************************************************************
  * (C) Copyright 1992-2021 by Deitel & Associates, Inc. and               *

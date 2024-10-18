@@ -2,34 +2,32 @@
 // Creating a random-access file sequentially
 #include <stdio.h>
 
-// clientData structure definition          
-struct clientData {    
-   int account;          
-   char lastName[15];  
-   char firstName[10]; 
-   double balance;     
-};                     
- 
+// clientData structure definition
+struct clientData {
+    int account;
+    char lastName[15];
+    char firstName[10];
+    double balance;
+};
+
 int main(void) {
-   FILE *cfPtr = NULL; // accounts.dat file pointer
+    FILE *cfPtr = NULL; // accounts.dat file pointer
 
-   // fopen opens the file; exits if file cannot be opened
-   if ((cfPtr = fopen("accounts.dat", "wb")) == NULL) {
-      puts("File could not be opened.");
-   } 
-   else { 
-      // create clientData with default information      
-      struct clientData blankClient = {0, "", "", 0.0};
-   
-      // output 100 blank records to file                          
-      for (int i = 1; i <= 100; ++i) {                             
-         fwrite(&blankClient, sizeof(struct clientData), 1, cfPtr);
-      }                                                            
+    // fopen opens the file; exits if file cannot be opened
+    if ((cfPtr = fopen("accounts.dat", "wb")) == NULL) {
+        puts("File could not be opened.");
+    } else {
+        // create clientData with default information
+        struct clientData blankClient = {0, "", "", 0.0};
 
-      fclose (cfPtr); // fclose closes the file
-   } 
-} 
+        // output 100 blank records to file
+        for (int i = 1; i <= 100; ++i) {
+            fwrite(&blankClient, sizeof(struct clientData), 1, cfPtr);
+        }
 
+        fclose(cfPtr); // fclose closes the file
+    }
+}
 
 /**************************************************************************
  * (C) Copyright 1992-2015 by Deitel & Associates, Inc. and               *

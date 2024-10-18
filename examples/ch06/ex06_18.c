@@ -4,26 +4,24 @@
 #define SIZE 10
 
 // function prototype
-void someFunction(const int b[], size_t start, size_t size); 
+void someFunction(const int b[], size_t start, size_t size);
 
 // function main begins program execution
 int main(void) {
-   int a[SIZE] = {8, 3, 1, 2, 6, 0, 9, 7, 4, 5}; // initialize a
-  
-   puts("Answer is:");
-   someFunction(a, 0, SIZE);
-   puts("");
-} 
+    int a[SIZE] = {8, 3, 1, 2, 6, 0, 9, 7, 4, 5}; // initialize a
+
+    puts("Answer is:");
+    someFunction(a, 0, SIZE);
+    puts("");
+}
 
 // What does this function do?
 void someFunction(const int b[], size_t start, size_t size) {
-   if (start < size) {
-      someFunction(b, start + 1, size);
-      printf("%d  ", b[start]);
-   } 
-} 
-
-
+    if (start < size) {
+        someFunction(b, start + 1, size);
+        printf("%d  ", b[start]);
+    }
+}
 
 /**************************************************************************
  * (C) Copyright 1992-2015 by Deitel & Associates, Inc. and               *
@@ -39,4 +37,3 @@ void someFunction(const int b[], size_t start, size_t size) {
  * consequential damages in connection with, or arising out of, the       *
  * furnishing, performance, or use of these programs.                     *
  *************************************************************************/
-

@@ -3,15 +3,14 @@
 #include <stdio.h>
 
 int main(void) {
-   char x = '\0'; 
-   char y[9] = ""; 
-   
-   printf("%s", "Enter a string: ");
-   scanf("%c%8s", &x, y);
+    char x = '\0';
+    char y[9] = "";
 
-   printf("The input was '%c' and \"%s\"\n", x, y);
-} 
+    printf("%s", "Enter a string: ");
+    scanf("%c%8s", &x, y);
 
+    printf("The input was '%c' and \"%s\"\n", x, y);
+}
 
 /**************************************************************************
  * (C) Copyright 1992-2021 by Deitel & Associates, Inc. and               *

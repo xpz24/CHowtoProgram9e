@@ -4,11 +4,11 @@
 #include <string.h>
 
 int main(void) {
-   char string1[15] = "BBBBBBBBBBBBBB"; 
-   
-   printf("string1 = %s\n", string1);
-   printf("string1 after memset = %s\n", (char *) memset(string1, 'b', 7)); 
-} 
+    char string1[15] = "BBBBBBBBBBBBBB";
+
+    printf("string1 = %s\n", string1);
+    printf("string1 after memset = %s\n", (char *)memset(string1, 'b', 7));
+}
 
 /**************************************************************************
  * (C) Copyright 1992-2021 by Deitel & Associates, Inc. and               *

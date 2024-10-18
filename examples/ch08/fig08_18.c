@@ -4,15 +4,13 @@
 #include <string.h>
 
 int main(void) {
-   const char *string1 = "The value is 3.14159";
-   const char *string2 = "aehi lsTuv";
-   
-   printf("string1 = %s\nstring2 = %s\n\n%s\n%s%zu\n", string1, string2,
-      "The length of the initial segment of string1",
-      "containing only characters from string2 = ",
-      strspn(string1, string2)); 
-} 
+    const char *string1 = "The value is 3.14159";
+    const char *string2 = "aehi lsTuv";
 
+    printf("string1 = %s\nstring2 = %s\n\n%s\n%s%zu\n", string1, string2,
+           "The length of the initial segment of string1",
+           "containing only characters from string2 = ", strspn(string1, string2));
+}
 
 /**************************************************************************
  * (C) Copyright 1992-2021 by Deitel & Associates, Inc. and               *

@@ -3,20 +3,18 @@
 #include <stdio.h>
 
 int main(void) {
-   int x = 5; 
-   int y = 0; 
+    int x = 5;
+    int y = 0;
 
-   // ptr is a constant pointer to a constant integer. ptr always 
-   // points to the same location; the integer at that location
-   // cannot be modified
-   const int *const ptr = &x; // initialization is OK
-                                 
-   printf("%d\n", *ptr);
-   *ptr = 7; // error: *ptr is const; cannot assign new value 
-   ptr = &y; // error: ptr is const; cannot assign new address
-} 
+    // ptr is a constant pointer to a constant integer. ptr always
+    // points to the same location; the integer at that location
+    // cannot be modified
+    const int *const ptr = &x; // initialization is OK
 
-
+    printf("%d\n", *ptr);
+    *ptr = 7; // error: *ptr is const; cannot assign new value
+    ptr = &y; // error: ptr is const; cannot assign new address
+}
 
 /**************************************************************************
  * (C) Copyright 1992-2021 by Deitel & Associates, Inc. and               *
@@ -32,4 +30,3 @@ int main(void) {
  * consequential damages in connection with, or arising out of, the       *
  * furnishing, performance, or use of these programs.                     *
  *************************************************************************/
-

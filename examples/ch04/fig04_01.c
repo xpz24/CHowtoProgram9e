@@ -3,16 +3,15 @@
 #include <stdio.h>
 
 int main(void) {
-   int counter = 1; // initialization
+    int counter = 1; // initialization
 
-   while (counter <= 5) { // iteration condition
-      printf("%d  ", counter);
-      ++counter; // increment
-   }
+    while (counter <= 5) { // iteration condition
+        printf("%d  ", counter);
+        ++counter; // increment
+    }
 
-   puts("");
+    puts("");
 }
-
 
 /**************************************************************************
  * (C) Copyright 1992-2015 by Deitel & Associates, Inc. and               *

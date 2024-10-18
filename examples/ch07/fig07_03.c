@@ -6,19 +6,17 @@
 void cubeByReference(int *nPtr); // function prototype
 
 int main(void) {
-   int number = 5; // initialize number
+    int number = 5; // initialize number
 
-   printf("The original value of number is %d", number);
-   cubeByReference(&number); // pass address of number to cubeByReference
-   printf("\nThe new value of number is %d\n", number);
-} 
-
-// calculate cube of *nPtr; actually modifies number in main
-void cubeByReference(int *nPtr) {                           
-   *nPtr = *nPtr * *nPtr * *nPtr; // cube *nPtr             
+    printf("The original value of number is %d", number);
+    cubeByReference(&number); // pass address of number to cubeByReference
+    printf("\nThe new value of number is %d\n", number);
 }
 
-
+// calculate cube of *nPtr; actually modifies number in main
+void cubeByReference(int *nPtr) {
+    *nPtr = *nPtr * *nPtr * *nPtr; // cube *nPtr
+}
 
 /**************************************************************************
  * (C) Copyright 1992-2021 by Deitel & Associates, Inc. and               *
@@ -34,4 +32,3 @@ void cubeByReference(int *nPtr) {
  * consequential damages in connection with, or arising out of, the       *
  * furnishing, performance, or use of these programs.                     *
  *************************************************************************/
-

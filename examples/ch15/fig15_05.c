@@ -1,25 +1,23 @@
-// fig15_05.c 
+// fig15_05.c
 // Using the goto statement
 #include <stdio.h>
 
 int main(void) {
-   int count = 1; // initialize count
+    int count = 1; // initialize count
 
-   start: // label
-      if (count > 10) {
-         goto end;
-      } 
+start: // label
+    if (count > 10) {
+        goto end;
+    }
 
-      printf("%d  ", count);
-      ++count;
+    printf("%d  ", count);
+    ++count;
 
-      goto start; // goto start on line 9
+    goto start; // goto start on line 9
 
-   end: // label
-      putchar('\n');
-} 
-
-
+end: // label
+    putchar('\n');
+}
 
 /**************************************************************************
  * (C) Copyright 1992-2021 by Deitel & Associates, Inc. and               *

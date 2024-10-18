@@ -1,15 +1,13 @@
 #include <stdio.h>
 
 int main(void) {
-   int c = '\0'; // variable to hold character input by user
-   
-   if ((c = getchar()) != EOF) {
-      main();
-      printf("%c", c);
-   } 
-} 
+    int c = '\0'; // variable to hold character input by user
 
-
+    if ((c = getchar()) != EOF) {
+        main();
+        printf("%c", c);
+    }
+}
 
 /**************************************************************************
  * (C) Copyright 1992-2021 by Deitel & Associates, Inc. and               *

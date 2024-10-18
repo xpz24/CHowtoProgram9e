@@ -4,21 +4,19 @@
 #include <string.h>
 
 int main(void) {
-   char string[] = "This is a sentence with 7 tokens";
-   
-   printf("The string to be tokenized is:\n%s\n\n", string);
-   puts("The tokens are:");
-      
-   char *tokenPtr = strtok(string, " "); // begin tokenizing sentence
+    char string[] = "This is a sentence with 7 tokens";
 
-   // continue tokenizing sentence until tokenPtr becomes NULL
-   while (tokenPtr != NULL) { 
-      printf("%s\n", tokenPtr);
-      tokenPtr = strtok(NULL, " "); // get next token
-   } 
-} 
+    printf("The string to be tokenized is:\n%s\n\n", string);
+    puts("The tokens are:");
 
+    char *tokenPtr = strtok(string, " "); // begin tokenizing sentence
 
+    // continue tokenizing sentence until tokenPtr becomes NULL
+    while (tokenPtr != NULL) {
+        printf("%s\n", tokenPtr);
+        tokenPtr = strtok(NULL, " "); // get next token
+    }
+}
 
 /**************************************************************************
  * (C) Copyright 1992-2021 by Deitel & Associates, Inc. and               *

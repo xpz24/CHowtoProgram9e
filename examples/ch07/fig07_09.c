@@ -3,17 +3,16 @@
 #include <stdio.h>
 
 int main(void) {
-   int x = 0; // define x
-   int y = 0; // define y
+    int x = 0; // define x
+    int y = 0; // define y
 
-   // ptr is a constant pointer to an integer that can be modified  
-   // through ptr, but ptr always points to the same memory location
-   int * const ptr = &x;                                            
+    // ptr is a constant pointer to an integer that can be modified
+    // through ptr, but ptr always points to the same memory location
+    int *const ptr = &x;
 
-   *ptr = 7; // allowed: *ptr is not const
-   ptr = &y; // error: ptr is const; cannot assign new address
-} 
-
+    *ptr = 7; // allowed: *ptr is not const
+    ptr = &y; // error: ptr is const; cannot assign new address
+}
 
 /**************************************************************************
  * (C) Copyright 1992-2021 by Deitel & Associates, Inc. and               *
@@ -29,4 +28,3 @@ int main(void) {
  * consequential damages in connection with, or arising out of, the       *
  * furnishing, performance, or use of these programs.                     *
  *************************************************************************/
-

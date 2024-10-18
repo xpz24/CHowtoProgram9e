@@ -5,25 +5,24 @@
 
 // function main begins program execution
 int main(void) {
-   char string1[SIZE] = ""; // reserves 20 characters
-   char string2[] = "string literal"; // reserves 15 characters
+    char string1[SIZE] = "";           // reserves 20 characters
+    char string2[] = "string literal"; // reserves 15 characters
 
-   // prompt for string from user then read it into array string1
-   printf("%s", "Enter a string (no longer than 19 characters): ");
-   scanf("%19s", string1); // input no more than 19 characters
+    // prompt for string from user then read it into array string1
+    printf("%s", "Enter a string (no longer than 19 characters): ");
+    scanf("%19s", string1); // input no more than 19 characters
 
-   // output strings
-   printf("string1 is: %s\nstring2 is: %s\n", string1, string2);
-   puts("string1 with spaces between characters is:");     
+    // output strings
+    printf("string1 is: %s\nstring2 is: %s\n", string1, string2);
+    puts("string1 with spaces between characters is:");
 
-   // output characters until null character is reached  
-   for (size_t i = 0; i < SIZE && string1[i] != '\0'; ++i) {
-      printf("%c ", string1[i]);                            
-   }                                                        
+    // output characters until null character is reached
+    for (size_t i = 0; i < SIZE && string1[i] != '\0'; ++i) {
+        printf("%c ", string1[i]);
+    }
 
-   puts("");
-} 
-
+    puts("");
+}
 
 /**************************************************************************
  * (C) Copyright 1992-2021 by Deitel & Associates, Inc. and               *
@@ -39,4 +38,3 @@ int main(void) {
  * consequential damages in connection with, or arising out of, the       *
  * furnishing, performance, or use of these programs.                     *
  *************************************************************************/
-

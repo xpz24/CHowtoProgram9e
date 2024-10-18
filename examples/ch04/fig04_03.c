@@ -1,19 +1,16 @@
-// fig04_03.c  
+// fig04_03.c
 // Summation with for.
 #include <stdio.h>
 
 int main(void) {
-   int sum = 0; // initialize sum
+    int sum = 0; // initialize sum
 
-   for (int number = 2; number <= 100; number += 2) {
-      sum += number; // add number to sum                     
-   }
+    for (int number = 2; number <= 100; number += 2) {
+        sum += number; // add number to sum
+    }
 
-   printf("Sum is %d\n", sum);
+    printf("Sum is %d\n", sum);
 }
-
-
-
 
 /**************************************************************************
  * (C) Copyright 1992-2015 by Deitel & Associates, Inc. and               *

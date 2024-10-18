@@ -1,23 +1,20 @@
 #include <stdio.h>
 
 int main(void) {
-   int row = 10; // initialize row 
+    int row = 10; // initialize row
 
-   while (row >= 1) { // loop until row < 1 
-      int column = 1; // set column to 1 as iteration begins 
+    while (row >= 1) {  // loop until row < 1
+        int column = 1; // set column to 1 as iteration begins
 
-      while (column <= 10) { // loop 10 times 
-         printf("%s", (row % 2) ? "<": ">"); // output 
-         ++column; // increment column 
-      } // end inner while 
+        while (column <= 10) {                   // loop 10 times
+            printf("%s", (row % 2) ? "<" : ">"); // output
+            ++column;                            // increment column
+        } // end inner while
 
-      --row; // decrement row 
-      puts(""); // begin new output line 
-   } // end outer while 
-} // end function main 
-
-
-
+        --row;    // decrement row
+        puts(""); // begin new output line
+    } // end outer while
+} // end function main
 
 /**************************************************************************
  * (C) Copyright 1992-2021 by Deitel & Associates, Inc. and               *
@@ -33,4 +30,3 @@ int main(void) {
  * consequential damages in connection with, or arising out of, the       *
  * furnishing, performance, or use of these programs.                     *
  *************************************************************************/
-

@@ -1,15 +1,14 @@
 #include <stdio.h>
 
 int main(void) {
-   int count = 1; // initialize count 
+    int count = 1; // initialize count
 
-   while (count <= 10) { // loop 10 times 
-      // output line of text 
-      puts((count % 2) ? "****" : "++++++++");
-      ++count; // increment count 
-   } // end while 
-} // end function main 
-
+    while (count <= 10) { // loop 10 times
+        // output line of text
+        puts((count % 2) ? "****" : "++++++++");
+        ++count; // increment count
+    } // end while
+} // end function main
 
 /**************************************************************************
  * (C) Copyright 1992-2021 by Deitel & Associates, Inc. and               *
@@ -25,4 +24,3 @@ int main(void) {
  * consequential damages in connection with, or arising out of, the       *
  * furnishing, performance, or use of these programs.                     *
  *************************************************************************/
-

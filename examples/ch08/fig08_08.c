@@ -4,23 +4,22 @@
 #define SIZE 80
 
 int main(void) {
-   int c = 0; // variable to hold character input by user
-   char sentence[SIZE] = ""; 
-   int i = 0; 
+    int c = 0; // variable to hold character input by user
+    char sentence[SIZE] = "";
+    int i = 0;
 
-   puts("Enter a line of text:"); 
+    puts("Enter a line of text:");
 
-   // use getchar to read each character              
-   while ((i < SIZE - 1) && (c = getchar()) != '\n') {
-      sentence[i++] = c;                              
-   }                                                  
+    // use getchar to read each character
+    while ((i < SIZE - 1) && (c = getchar()) != '\n') {
+        sentence[i++] = c;
+    }
 
-   sentence[i] = '\0'; // terminate string
+    sentence[i] = '\0'; // terminate string
 
-   puts("\nThe line entered was:");
-   puts(sentence); // display sentence
-} 
-
+    puts("\nThe line entered was:");
+    puts(sentence); // display sentence
+}
 
 /**************************************************************************
  * (C) Copyright 1992-2021 by Deitel & Associates, Inc. and               *

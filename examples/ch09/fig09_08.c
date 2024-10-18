@@ -3,10 +3,9 @@
 #include <stdio.h>
 
 int main(void) {
-   printf("%d\n%d\n", 786, -786);
-   printf("%+d\n%+d\n", 786, -786);
-} 
- 
+    printf("%d\n%d\n", 786, -786);
+    printf("%+d\n%+d\n", 786, -786);
+}
 
 /**************************************************************************
  * (C) Copyright 1992-2021 by Deitel & Associates, Inc. and               *

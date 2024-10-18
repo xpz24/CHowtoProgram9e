@@ -1,41 +1,38 @@
 // figC_03.c
 // Using bool, true and false.
-#include <stdio.h>
 #include <stdbool.h> // allows the use of bool, true, and false
+#include <stdio.h>
 
 bool isEven(int number); // function prototype
 
 int main(void) {
-   // loop for 2 inputs
-   for (int i = 0; i < 2; ++i) {
-      printf("Enter an integer: ");
-      int input = 0; // value entered by user
-      scanf("%d", &input);
+    // loop for 2 inputs
+    for (int i = 0; i < 2; ++i) {
+        printf("Enter an integer: ");
+        int input = 0; // value entered by user
+        scanf("%d", &input);
 
-      bool valueIsEven = isEven(input); // determine if input is even
+        bool valueIsEven = isEven(input); // determine if input is even
 
-      // determine whether input is even
-      if (valueIsEven) {
-         printf("%d is even\n\n", input);
-      } 
-      else {
-         printf("%d is odd\n\n", input);
-      } 
-   } 
-} 
+        // determine whether input is even
+        if (valueIsEven) {
+            printf("%d is even\n\n", input);
+        } else {
+            printf("%d is odd\n\n", input);
+        }
+    }
+}
 
-// isEven returns true if number is even 
+// isEven returns true if number is even
 bool isEven(int number) {
-   if (number % 2 == 0) { // is number divisible by 2?
-      return true;
-   } 
-   else {
-      return false;
-   }
-} 
+    if (number % 2 == 0) { // is number divisible by 2?
+        return true;
+    } else {
+        return false;
+    }
+}
 
-
- /*************************************************************************
+/*************************************************************************
  * (C) Copyright 1992-2021 by Deitel & Associates, Inc. and               *
  * Pearson Education, Inc. All Rights Reserved.                           *
  *                                                                        *

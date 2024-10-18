@@ -3,20 +3,17 @@
 #include <stdio.h>
 
 int main(void) {
-   char character = 'A'; // initialize char
-   printf("%c\n", character);
+    char character = 'A'; // initialize char
+    printf("%c\n", character);
 
-   printf("%s\n", "This is a string");
+    printf("%s\n", "This is a string");
 
-   char string[] = "This is a string"; // initialize char array
-   printf("%s\n", string);
+    char string[] = "This is a string"; // initialize char array
+    printf("%s\n", string);
 
-   const char *stringPtr = "This is also a string"; // char pointer
-   printf("%s\n", stringPtr);
-} 
-
-
-
+    const char *stringPtr = "This is also a string"; // char pointer
+    printf("%s\n", stringPtr);
+}
 
 /**************************************************************************
  * (C) Copyright 1992-2021 by Deitel & Associates, Inc. and               *

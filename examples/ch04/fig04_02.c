@@ -3,15 +3,14 @@
 #include <stdio.h>
 
 int main(void) {
-   // initialization, iteration condition, and increment 
-   // are all included in the for statement header.
-   for (int counter = 1; counter <= 5; ++counter) {
-      printf("%d  ", counter);
-   }
+    // initialization, iteration condition, and increment
+    // are all included in the for statement header.
+    for (int counter = 1; counter <= 5; ++counter) {
+        printf("%d  ", counter);
+    }
 
-   puts(""); // outputs a newline
+    puts(""); // outputs a newline
 }
-
 
 /**************************************************************************
  * (C) Copyright 1992-2015 by Deitel & Associates, Inc. and               *
@@ -27,4 +26,3 @@ int main(void) {
  * consequential damages in connection with, or arising out of, the       *
  * furnishing, performance, or use of these programs.                     *
  *************************************************************************/
-

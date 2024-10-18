@@ -1,22 +1,20 @@
 // fig05_03.c
-// Demonstrating the function-call stack 
+// Demonstrating the function-call stack
 // and stack frames using a function square.
 #include <stdio.h>
 
 int square(int x); // prototype for function square
 
 int main() {
-   int a = 10; // value to square (local variable in main)
+    int a = 10; // value to square (local variable in main)
 
-   printf("%d squared: %d\n", a, square(a)); // display a squared
-} 
+    printf("%d squared: %d\n", a, square(a)); // display a squared
+}
 
 // returns the square of an integer
 int square(int x) { // x is a local variable
-   return x * x; // calculate square and return result
-} 
-
-
+    return x * x;   // calculate square and return result
+}
 
 /**************************************************************************
  * (C) Copyright 1992-2021 by Deitel & Associates, Inc. and               *
